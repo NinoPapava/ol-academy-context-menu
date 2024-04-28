@@ -24,10 +24,10 @@ const Menu = ({ title }) => {
 
   return (
     <>
-      <div onContextMenu={showContext}>{title}</div>
+      <div  className="box" onContextMenu={showContext}>{title}</div>
       {isClicked && (
         <div ref={contextRef} className="context-menu" style={{ top: isContext.y, left: isContext.x }} onClick={hideContext}>
-          Context Menu for {title}
+          {title}
         </div>
       )}
     </>
