@@ -1,12 +1,12 @@
 import React from 'react'
-import { MenuContext } from './MenuContext'
+import { Menu } from './Menu'
 import {data} from '../data'
 
 const Wrapper = () => {
 
   return (
     <div className='Wrapper'>
-      <MenuContext data={data} />
+      <Menu data={data} />
     </div>
   )
 }
