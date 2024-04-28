@@ -1,10 +1,11 @@
 import { Menu } from "./Menu";
+import '../styles/MenuContext.scss'
 
 const MenuContext = ({ data }) => {
   return (
     <div>
       {data.map((item) => (
-        <div key={item.id}>
+        <div className="box" key={item.id}>
           <Menu title={item.title} />
         </div>
       ))}
